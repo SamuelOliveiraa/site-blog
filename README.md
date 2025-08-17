@@ -62,4 +62,4 @@ Este projeto é apenas para fins de estudo e demonstração.
 
 ---
 
-Feito com 💙 por Rocketseat e adaptado por mim!
+Feito com 💙 por Rocketseat e desenvolvido por mim!

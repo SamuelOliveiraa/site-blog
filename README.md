@@ -6,9 +6,7 @@ Este é um projeto de blog criado com [Next.js](https://nextjs.org/) e estilizad
 
 - Landing page moderna e responsiva
 - Seção de depoimentos de clientes
-- Catálogo de produtos personalizável
-- Suporte a temas escuros (dark mode)
-- Navegação entre páginas (Home, Blog, Termos de Uso, Política de Privacidade, Feedback)
+- Seção de produtos personalizável
 - Componentes reutilizáveis com React e TypeScript
 
 ## Tecnologias Utilizadas
@@ -18,10 +16,6 @@ Este é um projeto de blog criado com [Next.js](https://nextjs.org/) e estilizad
 - [TypeScript](https://www.typescriptlang.org/)
 - [Tailwind CSS](https://tailwindcss.com/)
 - [Lucide React Icons](https://lucide.dev/)
-- [Radix UI](https://www.radix-ui.com/)
-- [Class Variance Authority](https://cva.style/)
-- [clsx](https://github.com/lukeed/clsx)
-- [tailwind-merge](https://tailwind-merge.vercel.app/)
 
 ## Como rodar o projeto
 
@@ -68,4 +62,4 @@ Este projeto é apenas para fins de estudo e demonstração.
 
 ---
 
-Feito com 💙 por Rocketseat e adaptado por você!
+Feito com 💙 por Rocketseat e adaptado por mim!

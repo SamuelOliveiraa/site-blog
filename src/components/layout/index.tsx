@@ -1,4 +1,5 @@
 import { Inter } from "next/font/google";
+import CallToAction from "./call-to-action";
 import Footer from "./footer";
 import Header from "./header";
 
@@ -19,6 +20,8 @@ export default function Layout({ children }: LayoutProps) {
     >
       <Header />
       <main className="flex-1 flex flex-col mt-10">{children}</main>
+      <CallToAction />
+
       <Footer />
     </div>
   );

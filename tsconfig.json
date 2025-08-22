@@ -24,7 +24,8 @@
     "**/*.ts",
     "**/*.tsx",
     "tailwind.config.js",
-    ".contentlayer/generated"
+    ".contentlayer/generated",
+    "next.config.mjs"
   ],
   "exclude": ["node_modules"]
 }

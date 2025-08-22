@@ -31,7 +31,7 @@ export default function PostCard({
     >
       <div className="p-2 rounded-md overflow-hidden">
         <div className="relative">
-          <div className="absolute top-0 right-0 px-3 py-1 bg-gray-600 backdrop-blur-sm rounded-bl-sm">
+          <div className="absolute top-0 right-0 px-3 py-1 flex justify-center items-center bg-gray-600 backdrop-blur-sm rounded-bl-sm">
             <span className="text-gray-300 text-body-xs">{date}</span>
           </div>
           <Image

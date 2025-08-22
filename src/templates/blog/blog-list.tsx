@@ -1,22 +1,26 @@
 import Search from "@/components/search";
-import { allPosts } from "contentlayer/generated";
+import { Post } from "contentlayer/generated";
 import { Inbox } from "lucide-react";
 import { useRouter } from "next/router";
 import PostCard from "./components/post-card";
 import PostGridCard from "./components/post-grid-card";
 
-export function BlogList() {
+export type BlogListProps = {
+  posts: Post[];
+};
+
+export function BlogList({ posts }: BlogListProps) {
   const router = useRouter();
   const query = router.query.q;
   const pageTitle = query
     ? `Resultados de busca para: "${query}"`
     : "Dicas e estratégias para impulsionar seu negócio";
 
-  const posts = query
-    ? allPosts.filter(post => {
-        post.title.toLowerCase().includes(query.toLocaleString());
-      })
-    : allPosts;
+  const postsList = query
+    ? posts.filter(post =>
+        post.title.toLowerCase()?.includes(query.toLocaleString().toLowerCase())
+      )
+    : posts;
 
   return (
     <div className="flex flex-col py-24 flex-grow h-full ">
@@ -35,7 +39,7 @@ export function BlogList() {
       </header>
 
       <PostGridCard>
-        {posts.map(post => (
+        {postsList.map(post => (
           <PostCard
             key={post._id}
             date={new Date(post.date).toLocaleDateString("pt-BR")}
@@ -48,11 +52,13 @@ export function BlogList() {
         ))}
       </PostGridCard>
 
-      {posts.length === 0 && (
+      {postsList.length === 0 && (
         <div className="container px-8">
           <div className="container flex flex-col justify-center gap-8 items-center border-dashed border-2 border-gray-300 p-8 md:p-12 rounded-lg">
             <Inbox className="h-12 w-12 text-cyan-100" />
-            <p className="text-gray-100">Nenhuma postagem localizada.</p>
+            <p className="text-gray-100 text-center">
+              Nenhuma postagem localizada.
+            </p>
           </div>
         </div>
       )}

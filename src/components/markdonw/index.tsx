@@ -29,7 +29,7 @@ export default function Markdown({ content }: MarkdownProps) {
           <p className="mb-6 leading-relaxed text-gray-200">{children}</p>
         ),
         strong: ({ children }) => (
-          <strong className="font-extrabold text-blue-200">{children}</strong>
+          <strong className="text-blue-200">{children}</strong>
         )
       }}
     >

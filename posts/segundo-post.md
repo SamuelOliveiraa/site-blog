@@ -23,3 +23,21 @@ Veja o que nossa plataforma oferece:
 **Suporte especializado**: Nossa equipe de suporte está sempre disponível para ajudar você com qualquer dúvida ou desafio.
 
 Está pronto para colocar seus produtos no mundo? Com o Site.Set, criar sua loja online é rápido, simples e acessível. Desde a configuração do site até a finalização da compra, oferecemos todas as ferramentas necessárias para você vender com sucesso.
+
+## Dicas para vender mais no digital
+
+- **Invista em fotos de qualidade:** Imagens profissionais aumentam a confiança do cliente.
+
+- **Descreva bem seus produtos:** Detalhes claros ajudam o consumidor a tomar decisão.
+
+- **Ofereça promoções e descontos:** Estratégias de marketing atraem novos clientes e fidelizam os antigos.
+
+- **Acompanhe os resultados:** Use relatórios e métricas para ajustar sua estratégia de vendas.
+
+## Exemplos de sucesso
+
+1. **Lojas de nicho:** Produtos exclusivos para públicos específicos têm grande potencial.
+
+2. **Pequenos empreendedores:** Com criatividade e dedicação, conseguem crescer no ambiente digital.
+
+O universo dos negócios digitais está em constante evolução. Esteja sempre atento às tendências e inove para se destacar!

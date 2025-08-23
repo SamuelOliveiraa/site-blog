@@ -25,3 +25,23 @@ Confira os principais benefícios:
 ## Transforme sua ideia em realidade
 
 Não espere o "momento perfeito". Com dedicação, ferramentas adequadas e estratégia, seu projeto pode se tornar **um negócio lucrativo e sustentável**.
+
+## Dicas para começar seu negócio online
+
+- **Pesquise o mercado:** Entenda seu público-alvo e analise a concorrência.
+
+- **Escolha uma plataforma confiável:** Existem diversas opções para criar lojas virtuais, cursos ou portfólios.
+
+- **Invista em marketing digital:** Use redes sociais, SEO e anúncios pagos para atrair clientes.
+
+- **Ofereça um bom atendimento:** O suporte ao cliente é fundamental para fidelizar e gerar indicações.
+
+## Exemplos de negócios online de sucesso
+
+1. **E-commerce de nicho:** Lojas especializadas em produtos exclusivos ou personalizados.
+
+2. **Infoprodutos:** Venda de cursos, e-books e consultorias online.
+
+3. **Serviços digitais:** Design, programação, marketing, tradução e muito mais.
+
+O importante é dar o primeiro passo e aprender com cada etapa da jornada empreendedora!

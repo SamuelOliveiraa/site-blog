@@ -25,3 +25,21 @@ Veja algumas dicas práticas:
 ## Liberdade financeira é possível
 
 Com disciplina e foco, você pode sair do aperto, guardar dinheiro e conquistar seus sonhos. O segredo é começar **hoje**.
+
+## Estratégias para potencializar suas finanças
+
+- **Educação financeira:** Busque conhecimento sobre investimentos, orçamento e economia doméstica.
+
+- **Evite compras por impulso:** Reflita antes de gastar e priorize o que realmente importa.
+
+- **Diversifique seus investimentos:** Não coloque todo o dinheiro em um só lugar, busque opções como renda fixa, variável e fundos.
+
+- **Acompanhe seus resultados:** Revise seu planejamento mensalmente e ajuste o que for necessário.
+
+## Ferramentas úteis
+
+- Planilhas de controle financeiro
+- Aplicativos de gestão de gastos
+- Livros e canais de educação financeira
+
+Lembre-se: pequenas mudanças hoje podem garantir um futuro muito mais tranquilo!

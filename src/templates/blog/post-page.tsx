@@ -62,7 +62,7 @@ export const PostPage = ({ post }: PostPageProps) => {
               />
             </header>
 
-            <div className="prose prose-invert max-w-none px-4 mt-12 md:px-6 lg:px-12">
+            <div className="prose prose-invert max-w-none px-4 md:px-6 lg:px-12">
               <Markdown content={post?.body.raw} />
             </div>
           </article>

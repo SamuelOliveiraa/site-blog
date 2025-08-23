@@ -21,7 +21,7 @@ export default function Header() {
             <ActiveLink href={"/blog"}>Blog</ActiveLink>
 
             <Button variant="secondary" asChild>
-              <Link href="/comecar">Começar</Link>
+              <Link href="/">Começar</Link>
             </Button>
           </nav>
 
@@ -42,7 +42,7 @@ export default function Header() {
                     <ActiveLink href={"/blog"}>Blog</ActiveLink>
                   </SheetTitle>
                   <Button variant="secondary" asChild>
-                    <Link href="/comecar">Começar</Link>
+                    <Link href="/">Começar</Link>
                   </Button>
                 </div>
               </SheetContent>

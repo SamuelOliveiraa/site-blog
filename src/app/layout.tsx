@@ -1,11 +1,27 @@
 import "@/styles/globals.css";
 
 import Layout from "@/components/layout";
+import { Metadata } from "next";
 
-export const metadata = {
-  title: "Site Blog",
-  description:
-    "Plataforma de blog moderno desenvolvida com Next.js, React, Contentlayer e Tailwind CSS. Compartilhe dicas, estratégias e conteúdos sobre negócios digitais, produtividade, empreendedorismo e tecnologia."
+export const metadata: Metadata = {
+  title: "Site.set",
+  description: "Venda seus produtos como afiliado em um único lugar.",
+  robots: "index, follow",
+  openGraph: {
+    title: "Site.set",
+    description: "Venda seus produtos como afiliado em um único lugar",
+    url: "https://site-blog-rho.vercel.app/og-image.png",
+    siteName: "Site.set",
+    locale: "pt-BR",
+    images: [
+      {
+        url: "https://site-blog-rho.vercel.app/og-image.png",
+        width: 800,
+        height: 600,
+        alt: "Site.set"
+      }
+    ]
+  }
 };
 
 export default function RootLayout({

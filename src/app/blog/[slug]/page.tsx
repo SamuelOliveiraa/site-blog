@@ -1,5 +1,6 @@
 import { PostPage } from "@/templates/blog/post-page";
 import { allPosts } from "contentlayer/generated";
+import { Metadata } from "next";
 import { notFound } from "next/navigation";
 
 type BlogPostPageProps = {
@@ -7,6 +8,27 @@ type BlogPostPageProps = {
     slug: string;
   }>;
 };
+
+export async function generateMetadata({
+  params
+}: BlogPostPageProps): Promise<Metadata> {
+  const { slug } = await params;
+  const post = allPosts.find(post => post.slug === slug);
+
+  if (!post) {
+    return {};
+  }
+
+  return {
+    title: post.title,
+    description: post.description,
+    authors: [{ name: post.author.name }],
+    robots: "index, follow",
+    openGraph: {
+      images: [post.image]
+    }
+  };
+}
 
 export const revalidate = 60;
 

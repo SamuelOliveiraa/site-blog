@@ -1,5 +1,7 @@
 # Site Blog [(Acesse aqui)](https://site-blog-rho.vercel.app/)
 
+![Imagem do Blog/Site](https://raw.githubusercontent.com/SamuelOliveiraa/site-blog/refs/heads/master/public/og-image.png)
+
 Este é um projeto de blog moderno desenvolvido com [Next.js](https://nextjs.org/), [React 18](https://react.dev/), [Contentlayer](https://www.contentlayer.dev/) e estilizado com [Tailwind CSS](https://tailwindcss.com/). O objetivo é fornecer uma plataforma simples e personalizável para criar uma loja de afiliados e compartilhar conteúdos em um blog.
 
 ## Funcionalidades

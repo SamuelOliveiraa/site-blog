@@ -1,0 +1,80 @@
+{
+  "Header": {
+    "headerLink1": "Inicio",
+    "headerLink2": "Blog",
+    "headerButton": "Começar"
+  },
+  "Footer": {
+    "footerText1": "Termos de uso",
+    "footerText2": "Política de privacidade"
+  },
+  "CallToAction": {
+    "title": "Crie uma loja online e inicie suas vendas ainda hoje"
+  },
+  "ButtonSection": { "text": "Criar Loja gratis" },
+  "HeroSection": {
+    "title": "Venda seus produtos como afiliado em um único lugar",
+    "text1": "Crie o seu site em menos de 5 minutos",
+    "text2": "Acompanhe e otimize seu negócio online",
+    "text3": "Não precisa de cartão de crédito"
+  },
+  "FeatureSection": {
+    "items": {
+      "item1": {
+        "title": "Simples",
+        "description": "Crie um catálogo de produtos online em poucos minutos"
+      },
+      "item2": {
+        "title": "Prático",
+        "description": "Venda para seu público através de uma plataforma única"
+      },
+      "item3": {
+        "title": "Personalizável",
+        "description": "Tenha uma loja online personalizada com a cara da sua marca"
+      }
+    }
+  },
+  "SupportSection": {
+    "title": "Sua loja de afiliados, simples, do jeito que deveria ser",
+    "cards": {
+      "card1": {
+        "title": "Personalize seu site",
+        "description": "Adicione sua logo, favicon, cores no seu catalago e tenha tudo com a sua cara."
+      },
+      "card2": {
+        "title": "Venda de qualquer loja",
+        "description": "Não importa a loja, o Site.Set permite que você insera qualquer link de afiliado."
+      },
+      "card3": {
+        "title": "Receba suporte amigável",
+        "description": "Nossa equipe estará sempre pronta para te atender para ajudar no que for preciso."
+      }
+    }
+  },
+  "CustomerStorySection": {
+    "title": "Quem utiliza, aprova!",
+    "stories": {
+      "story1": {
+        "content": "Criar minha loja com o site.set foi a melhor decisão para o meu negócio. A plataforma é super intuitiva, e consegui colocar meus produtos à venda em poucos minutos.",
+        "author": {
+          "name": "Annette Bones",
+          "role": "CEO na Anne Corp",
+          "avatar": "/avatar.jpg"
+        }
+      },
+      "story2": {
+        "content": "Transformar minha ideia em uma loja online foi fácil e rápido. Adorei as opções de personalização e a simplicidade para gerenciar os pedidos. Já vejo meus produtos alcançando mais pessoas!",
+        "author": {
+          "name": "Jacob Jones",
+          "role": "CEO na JJ Org",
+          "avatar": "/avatar-2.svg"
+        }
+      }
+    }
+  },
+  "BlogListPage": {
+    "resultsQuery1": "Resultados de busca para:",
+    "title": "Dicas e estratégias para impulsionar seu negócio",
+    "emptyPosts": "Nenhuma postagem localizada."
+  }
+}

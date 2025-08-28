@@ -24,12 +24,18 @@ export const Post = defineDocumentType(() => ({
       type: "nested",
       of: Author,
       required: true
-    }
+    },
+    locale: { type: "string", required: true }
   },
   computedFields: {
     slug: {
       type: "string",
-      resolve: doc => doc._raw.sourceFileName.replace(".md", "")
+      resolve: doc => doc._raw.sourceFileName.replace(/\.(pt|en)\.md$/, "")
+    },
+    url: {
+      type: "string",
+      resolve: doc =>
+        `/${doc.locale}/blog/${doc._raw.sourceFileName.replace(/\.md$/, "")}`
     }
   }
 }));

@@ -2,11 +2,24 @@ import { ArrowRight } from "lucide-react";
 import Link from "next/link";
 import { Button } from "../ui/button";
 
-export default function ButtonSection() {
+import { useTranslations } from "next-intl";
+
+type ButtonSectionProps = {
+  hidden?: boolean;
+};
+
+export default function ButtonSection({ hidden }: ButtonSectionProps) {
+  const t = useTranslations("ButtonSection");
+
   return (
-    <Button className="rounded-full w-fit" asChild>
+    <Button
+      className={`${
+        hidden ? "w-full md:hidden mt-auto" : "w-fit"
+      } rounded-full`}
+      asChild
+    >
       <Link href="/">
-        Criar Loja gratis
+        {t("text")}
         <ArrowRight />
       </Link>
     </Button>

@@ -1,0 +1,80 @@
+{
+  "Header": {
+    "headerLink1": "Home",
+    "headerLink2": "Blog",
+    "headerButton": "Begin"
+  },
+  "Footer": {
+    "footerText1": "Terms of Use",
+    "footerText2": "Privacy Policy"
+  },
+  "CallToAction": {
+    "title": "Create an online store and start selling today"
+  },
+  "ButtonSection": { "text": "Create a free store" },
+  "HeroSection": {
+    "title": "Sell ​​your products as an affiliate in one place",
+    "text1": "Create your website in less than 5 minutes",
+    "text2": "Track and optimize your online business",
+    "text3": "No credit card needed"
+  },
+  "FeatureSection": {
+    "items": {
+      "item1": {
+        "title": "Simple",
+        "description": "Create an online product catalog in just a few minutes"
+      },
+      "item2": {
+        "title": "Practical",
+        "description": "Sell to your audience through a single platform"
+      },
+      "item3": {
+        "title": "Customizable",
+        "description": "Have an online store personalized to match your brand"
+      }
+    }
+  },
+  "SupportSection": {
+    "title": "Your affiliate store, simple, the way it should be",
+    "cards": {
+      "card1": {
+        "title": "Customize your website",
+        "description": "Add your logo, favicon, and colors to your catalog and make everything truly yours."
+      },
+      "card2": {
+        "title": "Sell from any store",
+        "description": "No matter the store, Site.Set allows you to add any affiliate link."
+      },
+      "card3": {
+        "title": "Get friendly support",
+        "description": "Our team will always be ready to assist you with whatever you need."
+      }
+    }
+  },
+  "CustomerStorySection": {
+    "title": "Those who use it, approve it!",
+    "stories": {
+      "story1": {
+        "content": "Creating my store with site.set was the best decision for my business. The platform is super intuitive, and I was able to list my products for sale in just a few minutes.",
+        "author": {
+          "name": "Annette Bones",
+          "role": "CEO at Anne Corp",
+          "avatar": "/avatar.jpg"
+        }
+      },
+      "story2": {
+        "content": "Turning my idea into an online store was quick and easy. I loved the customization options and how simple it is to manage orders. I can already see my products reaching more people!",
+        "author": {
+          "name": "Jacob Jones",
+          "role": "CEO at JJ Org",
+          "avatar": "/avatar-2.svg"
+        }
+      }
+    }
+  },
+  "BlogListPage": {
+    "resultsQuery1": "Search results for:",
+    "title": "Tips and strategies to boost your business",
+    "emptyPosts": "No posts found."
+  }
+}

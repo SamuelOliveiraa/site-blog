@@ -1,32 +1,32 @@
+import { useTranslations } from "next-intl";
 import Image from "next/image";
 
-const customerStories = [
-  {
-    content:
-      "Criar minha loja com o site.set foi a melhor decisão para o meu negócio. A plataforma é super intuitiva, e consegui colocar meus produtos à venda em poucos minutos.",
-    author: {
-      name: "Annette Bones",
-      role: "CEO na Anne Corp",
-      avatar: "/avatar-1.svg"
-    }
-  },
-  {
-    content:
-      "Transformar minha ideia em uma loja online foi fácil e rápido. Adorei as opções de personalização e a simplicidade para gerenciar os pedidos. Já vejo meus produtos alcançando mais pessoas!",
-    author: {
-      name: "Jacob Jones",
-      role: "CEO na JJ Org",
-      avatar: "/avatar-2.svg"
-    }
-  }
-];
-
 export default function CustomerStorySection() {
+  const t = useTranslations("CustomerStorySection");
+
+  const customerStories = [
+    {
+      content: t("stories.story1.content"),
+      author: {
+        name: t("stories.story1.author.name"),
+        role: t("stories.story1.author.role"),
+        avatar: t("stories.story1.author.avatar")
+      }
+    },
+    {
+      content: t("stories.story2.content"),
+      author: {
+        name: t("stories.story2.author.name"),
+        role: t("stories.story2.author.role"),
+        avatar: t("stories.story2.author.avatar")
+      }
+    }
+  ];
   return (
     <section className="container py-8 md:py-10 ">
       <div className="flex flex-col items-center gap-12  ">
         <h2 className="font-sans text-heading-xl text-gray-100">
-          Quem utiliza, aprova!
+          {t("title")}
         </h2>
         <div className="grid gap-7 md:grid-cols-2">
           {customerStories.map(customerStory => (

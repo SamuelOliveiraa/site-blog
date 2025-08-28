@@ -3,7 +3,8 @@
 import Search from "@/components/search";
 import { Post } from "contentlayer/generated";
 import { Inbox } from "lucide-react";
-import { useSearchParams } from "next/navigation";
+import { useTranslations } from "next-intl";
+import { useParams, useSearchParams } from "next/navigation";
 import PostCard from "./components/post-card";
 import PostGridCard from "./components/post-grid-card";
 
@@ -12,17 +13,26 @@ export type BlogListProps = {
 };
 
 export function BlogList({ posts }: BlogListProps) {
+  const t = useTranslations("BlogListPage");
+
   const searchParams = useSearchParams();
   const query = searchParams?.get("q") ?? "";
-  const pageTitle = query
-    ? `Resultados de busca para: "${query}"`
-    : "Dicas e estratégias para impulsionar seu negócio";
+  const pageTitle = query ? `${t("resultsQuery1")} "${query}"` : t("title");
+
+  const params = useParams();
+  const rawLocale = params.locale ?? "pt"; // o params locale pode me retornar um string ou string[]
+
+  const locale = Array.isArray(rawLocale) ? rawLocale[0] : rawLocale; // utilizo o ternario para verificar se é array ou não e pegar somente a primeira string
+
+  const postsByLocale = posts.filter(
+    post => post.locale.trim() === locale.trim()
+  );
 
   const postsList = query
-    ? posts.filter(post =>
+    ? postsByLocale.filter(post =>
         post.title.toLowerCase()?.includes(query.toLocaleString().toLowerCase())
       )
-    : posts;
+    : postsByLocale;
 
   return (
     <div className="flex flex-col py-24 flex-grow h-full ">
@@ -50,6 +60,7 @@ export function BlogList({ posts }: BlogListProps) {
             image={post.image}
             description={post.description}
             author={{ name: post.author.name, avatar: post.author.avatar }}
+            locale={post.locale}
           />
         ))}
       </PostGridCard>
@@ -58,9 +69,7 @@ export function BlogList({ posts }: BlogListProps) {
         <div className="container px-8">
           <div className="container flex flex-col justify-center gap-8 items-center border-dashed border-2 border-gray-300 p-8 md:p-12 rounded-lg">
             <Inbox className="h-12 w-12 text-cyan-100" />
-            <p className="text-gray-100 text-center">
-              Nenhuma postagem localizada.
-            </p>
+            <p className="text-gray-100 text-center">{t("emptyPosts")}</p>
           </div>
         </div>
       )}

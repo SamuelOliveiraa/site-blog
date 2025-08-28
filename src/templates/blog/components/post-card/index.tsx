@@ -14,6 +14,7 @@ type PostCardProps = {
   image: string;
   date: string;
   author: Author;
+  locale: string;
 };
 
 export default function PostCard({
@@ -22,11 +23,12 @@ export default function PostCard({
   description,
   image,
   date,
-  author
+  author,
+  locale
 }: PostCardProps) {
   return (
     <Link
-      href={`/blog/${slug}`}
+      href={`/${locale}/blog/${slug}`}
       className="w-full max-w-2xl rounded-[12px] border-[1px] border-gray-400 bg-gray-600 overflow-hidden transition-all duration-300  hover:border-blue-300 "
     >
       <div className="p-2 rounded-md overflow-hidden">
@@ -36,7 +38,7 @@ export default function PostCard({
           </div>
           <Image
             src={image.trim()}
-            alt="Post do projeto"
+            alt={title}
             width={288}
             height={144}
             className="w-full h-40 object-cover object-center rounded-[8px]"

@@ -1,11 +1,12 @@
 ---
 title: Trabalho Remoto
 description: O modelo de trabalho remoto veio para ficar e pode trazer muitos benefícios para empresas e colaboradores. Descubra como aproveitar ao máximo essa modalidade.
-date: 2025-03-05 09:30:00
+date: 2025-05-06 09:30:00
 image: /assets/remoto.webp
 author:
   name: "Samuel Oliveira"
-  avatar: /avatar-1.svg
+  avatar: /avatar.jpg
+locale: pt
 ---
 
 # O futuro é o trabalho remoto

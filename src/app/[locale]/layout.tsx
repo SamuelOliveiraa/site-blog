@@ -3,6 +3,10 @@ import "@/styles/globals.css";
 import Layout from "@/components/layout";
 import { Metadata } from "next";
 
+import { routing } from "@/i18n/routing";
+import { NextIntlClientProvider, hasLocale } from "next-intl";
+import { notFound } from "next/navigation";
+
 export const metadata: Metadata = {
   title: "Site.set",
   description: "Venda seus produtos como afiliado em um único lugar.",
@@ -24,15 +28,22 @@ export const metadata: Metadata = {
   }
 };
 
-export default function RootLayout({
-  children
-}: {
+type LayoutProps = {
   children: React.ReactNode;
-}) {
+  params: { locale: string };
+};
+
+export default async function RootLayout({ children, params }: LayoutProps) {
+  const { locale } = await params;
+  if (!hasLocale(routing.locales, locale)) {
+    notFound();
+  }
   return (
-    <html lang="en">
+    <html lang="pt">
       <body>
-        <Layout>{children}</Layout>
+        <NextIntlClientProvider>
+          <Layout>{children}</Layout>
+        </NextIntlClientProvider>
       </body>
     </html>
   );

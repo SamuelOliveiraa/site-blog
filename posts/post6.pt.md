@@ -1,11 +1,12 @@
 ---
 title: Produtividade no Trabalho
 description: A produtividade é um diferencial importante para quem deseja crescer profissionalmente. Descubra como organizar seu tempo e alcançar mais resultados.
-date: 2025-02-18 16:45:00
+date: 2025-07-18 16:45:00
 image: /assets/produtividade.jpg
 author:
   name: "Samuel Oliveira"
-  avatar: /avatar-1.svg
+  avatar: /avatar.jpg
+locale: pt
 ---
 
 # Como aumentar sua produtividade no dia a dia

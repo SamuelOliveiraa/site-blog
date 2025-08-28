@@ -1,27 +1,26 @@
-import { ArrowRight } from "lucide-react";
+import { useTranslations } from "next-intl";
 import Image from "next/image";
-import Link from "next/link";
 import ButtonSection from "../../../../components/button";
-import { Button } from "../../../../components/ui/button";
 
 export default function FeatureSection() {
+  const t = useTranslations("FeatureSection");
   return (
     <section className="container gap-6 grid md:grid-cols-2 pb-8 pt-8 md:py-10">
       <div className="flex flex-col gap-4 rounded-lg p-6 bg-gray-500 md:p-12">
         <span className="text-body-tag text-blue-200 bg-blue-400 px-2 py-1 w-fit rounded-sm uppercase">
-          Simples
+          {t("items.item1.title")}
         </span>
         <h2 className="font-sans text-heading-lg text-gray-100 ">
-          Crie um catálogo de produtos online em poucos minutos
+          {t("items.item1.description")}
         </h2>
       </div>
 
       <div className="flex flex-col gap-4 rounded-lg p-6 bg-gray-500 md:p-12">
         <span className="text-body-tag text-blue-200 bg-blue-400 px-2 py-1 w-fit rounded-sm uppercase">
-          Pratico
+          {t("items.item2.title")}
         </span>
         <h2 className="font-sans text-heading-lg text-gray-100 ">
-          Venda para seu público através de uma plataforma única
+          {t("items.item2.description")}
         </h2>
       </div>
 
@@ -29,13 +28,14 @@ export default function FeatureSection() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-4 rounded-lg bg-gray-500 p-6 md:p-12 ">
           <div className="flex flex-col gap-4">
             <span className="text-body-tag text-blue-200 bg-blue-400 px-2 py-1 w-fit rounded-sm uppercase">
-              Personalizável
+              {t("items.item3.title")}
             </span>
             <h2 className="font-sans text-heading-lg text-gray-100 ">
-              Tenha uma loja online personalizada com a cara da sua marca
+              {t("items.item3.description")}
             </h2>
-
-            <ButtonSection />
+            <div className="hidden md:block">
+              <ButtonSection />
+            </div>
           </div>
 
           <div className="flex flex-col items-center justify-center w-full">
@@ -48,15 +48,8 @@ export default function FeatureSection() {
                 className="object-cover w-full"
               />
             </div>
-            <Button
-              className="w-full gap-2 rounded-full mt-4 md:mt-auto md:hidden "
-              asChild
-            >
-              <Link href="/">
-                Criar loja gratis
-                <ArrowRight />
-              </Link>
-            </Button>
+
+            <ButtonSection hidden />
           </div>
         </div>
       </div>

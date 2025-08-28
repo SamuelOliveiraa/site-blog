@@ -6,12 +6,15 @@ import { notFound } from "next/navigation";
 type BlogPostPageProps = {
   params: {
     slug: string;
+    locale: string;
   };
 };
 
 export function generateMetadata({ params }: BlogPostPageProps): Metadata {
-  const { slug } = params;
-  const post = allPosts.find(post => post.slug === slug);
+  const { slug, locale } = params;
+  const post = allPosts.find(
+    post => post.slug === slug && post.locale.trim() === locale.trim()
+  );
 
   if (!post) {
     return {};
@@ -28,19 +31,21 @@ export function generateMetadata({ params }: BlogPostPageProps): Metadata {
   };
 }
 
-export const revalidate = 60;
-
 export const dynamicParams = true;
 
 export async function generateStaticParams() {
   return allPosts.map(post => ({
-    slug: post.slug
+    slug: post.slug,
+    locale: post.locale.trim()
   }));
 }
 
 export default function BlogPostPage({ params }: BlogPostPageProps) {
-  const { slug } = params;
-  const post = allPosts.find(post => post.slug == slug);
+  const { slug, locale } = params;
+
+  const post = allPosts.find(
+    post => post.slug === slug && post.locale.trim() === locale.trim()
+  );
 
   if (!post) {
     notFound();

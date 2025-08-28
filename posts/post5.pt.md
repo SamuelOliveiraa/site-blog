@@ -1,11 +1,12 @@
 ---
 title: Finanças Pessoais
 description: Organizar suas finanças é o primeiro passo para conquistar liberdade financeira. Com pequenas mudanças no dia a dia, é possível economizar e investir melhor.
-date: 2025-02-12 11:00:00
+date: 2025-06-12 11:00:00
 image: /assets/financas.jpg
 author:
   name: "Samuel Oliveira"
-  avatar: /avatar-1.svg
+  avatar: /avatar.jpg
+locale: pt
 ---
 
 # Tenha o controle das suas finanças pessoais

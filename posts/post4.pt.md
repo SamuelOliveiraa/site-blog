@@ -1,11 +1,12 @@
 ---
 title: Empreendedorismo Online
 description: Montar um negócio online nunca foi tão acessível. Com as ferramentas certas, você pode transformar sua ideia em um projeto real e lucrativo.
-date: 2025-02-01 09:10:00
+date: 2025-06-28 09:10:00
 image: /assets/online.webp
 author:
   name: "Samuel Oliveira"
-  avatar: /avatar-1.svg
+  avatar: /avatar.jpg
+locale: pt
 ---
 
 # Empreender online é possível para todos

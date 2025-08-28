@@ -1,13 +1,15 @@
 import { HeartHandshake, PaintbrushVertical, Store } from "lucide-react";
+import { useTranslations } from "next-intl";
 
 export default function SupportSection() {
+  const t = useTranslations("SupportSection");
   return (
     <section className="relative pb-8 py-10 bg-gradient-to-r from-gray-500/80 to-gray-700/10 ">
       <div className="absolute inset-0 hidden md:block bg-[url('/background-features.svg')] bg-cover bg-center bg-no-repeat opacity-90" />
 
       <div className="container flex flex-col items-center gap-12 relative">
         <h2 className="text-balance text-center text-heading-xl text-gray-100 font-sans">
-          Sua loja de afiliados, simples, do jeito que deveria ser
+          {t("title")}
         </h2>
 
         <div className="grid gap-6 md:grid-cols-3">
@@ -16,11 +18,10 @@ export default function SupportSection() {
               <PaintbrushVertical className="h-6 w-4 text-white" />
             </div>
             <strong className="text-heading-sm text-gray-100">
-              Personalize seu site
+              {t("cards.card1.title")}
             </strong>
             <p className="text-body-sm text-gray-200">
-              Adicione sua logo, favicon, cores no seu catalago e tenha tudo com
-              a sua cara.
+              {t("cards.card1.description")}
             </p>
           </div>
 
@@ -29,11 +30,10 @@ export default function SupportSection() {
               <Store className="h-6 w-4 text-white" />
             </div>
             <strong className="text-heading-sm text-gray-100">
-              Venda de qualquer loja
+              {t("cards.card2.title")}
             </strong>
             <p className="text-body-sm text-gray-200">
-              Não importa a loja, o Site.Set permite que você insera qualquer
-              link de afiliado.
+              {t("cards.card2.description")}
             </p>
           </div>
 
@@ -42,11 +42,10 @@ export default function SupportSection() {
               <HeartHandshake className="h-6 w-4 text-white" />
             </div>
             <strong className="text-heading-sm text-gray-100">
-              Receba suporte amigável
+              {t("cards.card3.title")}
             </strong>
             <p className="text-body-sm text-gray-200">
-              Nossa equipe estará sempre pronta para te atender para ajudar no
-              que for preciso.
+              {t("cards.card3.description")}
             </p>
           </div>
         </div>

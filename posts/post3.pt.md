@@ -1,11 +1,12 @@
 ---
 title: Marketing Digital
 description: Descubra como o marketing digital pode transformar seu negócio e atrair clientes de forma eficiente. Com estratégias certas, sua marca ganha visibilidade e aumenta as vendas.
-date: 2025-01-15 14:30:00
+date: 2025-05-15 14:30:00
 image: /assets/terceiro-post.png
 author:
   name: "Samuel Oliveira"
-  avatar: /avatar-1.svg
+  avatar: /avatar.jpg
+locale: pt
 ---
 
 # Potencialize seu negócio com Marketing Digital

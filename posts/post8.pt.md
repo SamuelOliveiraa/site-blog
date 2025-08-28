@@ -1,11 +1,12 @@
 ---
 title: Inteligência Artificial nos Negócios
 description: A Inteligência Artificial está transformando o mercado e abrindo novas oportunidades para empresas de todos os tamanhos. Saiba como aplicar na sua estratégia.
-date: 2025-03-12 15:10:00
+date: 2025-07-12 15:10:00
 image: /assets/inteligencia-artificial.jpg
 author:
   name: "Samuel Oliveira"
-  avatar: /avatar-1.svg
+  avatar: /avatar.jpg
+locale: pt
 ---
 
 # Como a Inteligência Artificial pode ajudar seu negócio

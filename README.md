@@ -15,6 +15,7 @@ Este é um projeto de blog moderno desenvolvido com [Next.js](https://nextjs.org
 - Compartilhamento de posts
 - Layout responsivo
 - SEO otimizado
+- Suporte a internacionalização (i18n): português e inglês
 
 ## Tecnologias Utilizadas
 
@@ -26,6 +27,7 @@ Este é um projeto de blog moderno desenvolvido com [Next.js](https://nextjs.org
 - [Contentlayer](https://www.contentlayer.dev/)
 - [shadcn/ui](https://ui.shadcn.com/)
 - [Radix UI](https://www.radix-ui.com/)
+- [next-intl](https://next-intl-docs.vercel.app/) — Internacionalização
 
 ## 🚀 Como rodar o projeto
 
@@ -65,6 +67,7 @@ Este é um projeto de blog moderno desenvolvido com [Next.js](https://nextjs.org
 - `src/styles/` — Arquivos de estilos globais
 - `posts/` — Arquivos de conteúdo dos posts (MDX/Markdown) _(se usar Contentlayer)_
 - `public/` — Imagens e arquivos estáticos
+- `messages/` — Arquivos de tradução para internacionalização
 
 ## 📝 Observações
 
@@ -74,6 +77,7 @@ Este é um projeto de blog moderno desenvolvido com [Next.js](https://nextjs.org
   ```sh
   npx shadcn@latest add <componente>
   ```
+- Para adicionar ou editar traduções, modifique os arquivos em [`messages/`](messages/).
 
 ## Personalização
 

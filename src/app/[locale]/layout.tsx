@@ -7,6 +7,8 @@ import { routing } from "@/i18n/routing";
 import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { notFound } from "next/navigation";
 
+import { Analytics } from '@vercel/analytics/next';
+
 export const metadata: Metadata = {
   title: "Site.set",
   description: "Venda seus produtos como afiliado em um único lugar.",
@@ -34,7 +36,7 @@ type LayoutProps = {
 };
 
 export default async function RootLayout({ children, params }: LayoutProps) {
-  const { locale } = await params;
+  const { locale } = params;
   if (!hasLocale(routing.locales, locale)) {
     notFound();
   }
@@ -44,6 +46,7 @@ export default async function RootLayout({ children, params }: LayoutProps) {
         <NextIntlClientProvider>
           <Layout>{children}</Layout>
         </NextIntlClientProvider>
+        <Analytics />
       </body>
     </html>
   );

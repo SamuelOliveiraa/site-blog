@@ -1,23 +1,23 @@
-# Site Blog [(Acesse aqui)](https://site-blog-rho.vercel.app/)
+# Site Blog [(Access here)](https://site-blog-rho.vercel.app/)
 
-![Imagem do Blog/Site](https://raw.githubusercontent.com/SamuelOliveiraa/site-blog/refs/heads/master/public/og-image.png)
+![Blog/Site Image](https://raw.githubusercontent.com/SamuelOliveiraa/site-blog/refs/heads/master/public/og-image.png)
 
-Este é um projeto de blog moderno desenvolvido com [Next.js](https://nextjs.org/), [React 18](https://react.dev/), [Contentlayer](https://www.contentlayer.dev/) e estilizado com [Tailwind CSS](https://tailwindcss.com/). O objetivo é fornecer uma plataforma simples e personalizável para criar uma loja de afiliados e compartilhar conteúdos em um blog.
+This is a modern blog project developed with [Next.js](https://nextjs.org/), [React 18](https://react.dev/), [Contentlayer](https://www.contentlayer.dev/), and styled with [Tailwind CSS](https://tailwindcss.com/). The goal is to provide a simple and customizable platform to create an affiliate store and share content on a blog.
 
-## Funcionalidades
+## Features
 
-- Landing page moderna e responsiva
-- Seção de depoimentos de clientes
-- Seção de produtos personalizável
-- Componentes reutilizáveis com React e TypeScript
-- Listagem de posts com busca
-- Página de detalhes do post
-- Compartilhamento de posts
-- Layout responsivo
-- SEO otimizado
-- Suporte a internacionalização (i18n): português e inglês
+- Modern and responsive landing page
+- Customer testimonials section
+- Customizable products section
+- Reusable components with React and TypeScript
+- Post listing with search
+- Post detail page
+- Post sharing
+- Responsive layout
+- SEO optimized
+- Internationalization (i18n) support: Portuguese and English
 
-## Tecnologias Utilizadas
+## Technologies Used
 
 - [Next.js 13](https://nextjs.org/)
 - [React 18](https://react.dev/)
@@ -27,66 +27,66 @@ Este é um projeto de blog moderno desenvolvido com [Next.js](https://nextjs.org
 - [Contentlayer](https://www.contentlayer.dev/)
 - [shadcn/ui](https://ui.shadcn.com/)
 - [Radix UI](https://www.radix-ui.com/)
-- [next-intl](https://next-intl-docs.vercel.app/) — Internacionalização
+- [next-intl](https://next-intl-docs.vercel.app/) — Internationalization
 
-## 🚀 Como rodar o projeto
+## 🚀 How to run the project
 
-1. **Instale as dependências:**
+1. **Install the dependencies:**
 
    ```sh
    npm install
    ```
 
-2. **Gere os tipos do Contentlayer:**
+2. **Generate the Contentlayer types:**
 
    ```sh
    npx contentlayer build
    ```
 
-3. **Inicie o servidor de desenvolvimento:**
+3. **Start the development server:**
 
    ```sh
    npm run dev
    ```
 
-4. Abra [http://localhost:3000](http://localhost:3000) no seu navegador para ver o resultado.
+4. Open [http://localhost:3000](http://localhost:3000) in your browser to see the result.
 
 ## 🛠️ Scripts
 
-- `npm run dev` — Inicia o servidor de desenvolvimento
-- `npm run build` — Gera o build de produção
-- `npm run start` — Inicia o servidor em modo produção
-- `npx contentlayer build` — Gera os tipos e dados do Contentlayer
+- `npm run dev` — Starts the development server
+- `npm run build` — Generates the production build
+- `npm run start` — Starts the server in production mode
+- `npx contentlayer build` — Generates the Contentlayer types and data
 
-## Estrutura do Projeto
+## Project Structure
 
-- `src/pages/` — Páginas principais do site (Home, Blog, [slug], etc)
-- `src/components/` — Componentes reutilizáveis (Layout, Botão, Logo, Header, etc)
-- `src/templates/landing-page/` — Templates e seções da landing page
-- `src/templates/blog/` — Templates e componentes do blog (BlogList, PostCard, etc)
-- `src/styles/` — Arquivos de estilos globais
-- `posts/` — Arquivos de conteúdo dos posts (MDX/Markdown) _(se usar Contentlayer)_
-- `public/` — Imagens e arquivos estáticos
-- `messages/` — Arquivos de tradução para internacionalização
+- `src/pages/` — Main pages of the site (Home, Blog, [slug], etc)
+- `src/components/` — Reusable components (Layout, Button, Logo, Header, etc)
+- `src/templates/landing-page/` — Landing page templates and sections
+- `src/templates/blog/` — Blog templates and components (BlogList, PostCard, etc)
+- `src/styles/` — Global style files
+- `posts/` — Post content files (MDX/Markdown) _(if using Contentlayer)_
+- `public/` — Images and static files
+- `messages/` — Translation files for internationalization
 
-## 📝 Observações
+## 📝 Notes
 
-- O projeto foi testado com Node.js 18+ e Windows.
-- O Contentlayer pode exibir alguns avisos no Windows, mas funciona normalmente.
-- Para adicionar novos componentes do shadcn/ui, utilize o comando:
+- The project was tested with Node.js 18+ and Windows.
+- Contentlayer may display some warnings on Windows, but it works normally.
+- To add new shadcn/ui components, use the command:
   ```sh
-  npx shadcn@latest add <componente>
+  npx shadcn@latest add <component>
   ```
-- Para adicionar ou editar traduções, modifique os arquivos em [`messages/`](messages/).
+- To add or edit translations, modify the files in [`messages/`](messages/).
 
-## Personalização
+## Customization
 
-Você pode alterar as cores, fontes e outros estilos em [`tailwind.config.ts`](tailwind.config.ts).
+You can change the colors, fonts, and other styles in [`tailwind.config.ts`](tailwind.config.ts).
 
-## Licença
+## License
 
-Este projeto é apenas para fins de estudo e demonstração.
+This project is for study and demonstration purposes only.
 
 ---
 
-Feito com 💙 por Rocketseat e desenvolvido por mim!
+Made with 💙 by Rocketseat and developed by me!

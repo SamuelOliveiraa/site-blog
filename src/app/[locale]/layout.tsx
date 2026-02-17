@@ -7,7 +7,7 @@ import { routing } from "@/i18n/routing";
 import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { notFound } from "next/navigation";
 
-import { Analytics } from '@vercel/analytics/next';
+import { Analytics } from "@vercel/analytics/next";
 
 export const metadata: Metadata = {
   title: "Site.set",
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Site.set",
     description: "Venda seus produtos como afiliado em um único lugar",
-    url: "https://site-blog-rho.vercel.app/og-image.png",
+    url: "https://site-blog-rho.vercel.app/",
     siteName: "Site.set",
     locale: "pt-BR",
     images: [

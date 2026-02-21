@@ -10,16 +10,16 @@ export default function Footer() {
         <div className="flex md:flex-row justify-between gap-8 py-8">
           <Logo />
           <nav className="flex flex-col md:flex-row items-center gap-4 text-sm text-blue-100">
-            <Link href="/termos-de-uso" className="hover:text-blue-200">
+            <Link href="/" className="hover:text-blue-200">
               {t("footerText1")}
             </Link>
             <Link
-              href="/politica-de-privacidade"
+              href="/"
               className="hover:text-blue-200"
             >
               {t("footerText2")}
             </Link>
-            <Link href="/feedback" className="hover:text-blue-200">
+            <Link href="/" className="hover:text-blue-200">
               Feedback
             </Link>
           </nav>

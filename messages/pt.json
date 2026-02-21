@@ -59,7 +59,7 @@
         "author": {
           "name": "Annette Bones",
           "role": "CEO na Anne Corp",
-          "avatar": "/avatar.jpg"
+          "avatar": "/avatar-1.svg"
         }
       },
       "story2": {
@@ -67,7 +67,7 @@
         "author": {
           "name": "Jacob Jones",
           "role": "CEO na JJ Org",
-          "avatar": "/avatar-2.svg"
+          "avatar": "/avatar-2.jpg"
         }
       }
     }

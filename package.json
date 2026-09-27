@@ -22,7 +22,7 @@
     "clsx": "^2.1.1",
     "contentlayer": "^0.3.4",
     "lucide-react": "^0.539.0",
-    "next": "13.5.11",
+    "next": "15.5.24",
     "next-contentlayer": "^0.3.4",
     "next-intl": "^4.3.5",
     "postcss": "^8.5.6",
